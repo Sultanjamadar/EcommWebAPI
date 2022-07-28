@@ -12,10 +12,15 @@ namespace EcommWebAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     //api/Products/GetProduct
+    
     public class ProductsController : ControllerBase
     {
         private readonly IProduct product;
 
+        /// <summary>
+        /// added by sultan
+        /// </summary>
+        /// <param name="productRepositor"></param>
         public ProductsController(IProduct productRepositor)
         {
             this.product = productRepositor;
