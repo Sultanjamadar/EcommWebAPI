@@ -19,12 +19,18 @@ namespace EcommWebAPI.Controllers
 
         /// <summary>
         /// added by sultan
+        /// 
         /// </summary>
         /// <param name="productRepositor"></param>
         public ProductsController(IProduct productRepositor)
         {
             this.product = productRepositor;
         }
+
+        /// <summary>
+        /// Used to get all the products
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetProduct")]
         public async Task<List<Products>> GetProduct()
         {
