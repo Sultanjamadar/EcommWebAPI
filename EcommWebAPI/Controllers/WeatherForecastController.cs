@@ -29,6 +29,10 @@ namespace EcommWebAPI.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// get weather
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
